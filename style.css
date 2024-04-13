@@ -1,0 +1,87 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://t3.ftcdn.net/jpg/07/08/97/22/360_F_708972255_OlMtoHTfxRmfjTZodN8sPFlyQuwOyykc.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#click-me {
+    color: white;
+}
+
+.container {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    position: relative;
+    z-index: 100;
+}
+
+.object {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    border-radius: 7%;
+    filter: drop-shadow(0 0 0.5rem white);
+}
+
+#obj-1 {
+    background-color: blueviolet;
+    top: 0;
+    right: 0;
+    background-image: url('https://scontent.fhio2-2.fna.fbcdn.net/v/t39.30808-6/292908738_112944204807001_5913598775007995835_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=NeVvDPCvVVwAb7KWqu7&_nc_ht=scontent.fhio2-2.fna&oh=00_AfCvSOrCZ-40-So-1TBLlnRhHAfnaeqQgITZi9SkfTtv4Q&oe=66209393');
+    background-size: cover;
+    display: none;
+}
+
+#obj-2 {
+    background-color: aquamarine;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/405012513_7167170906668306_2528161413308972587_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=e-BQt3FipgAAb4q11iv&_nc_ht=scontent.fhio2-1.fna&oh=00_AfCoTnxYlJC9XfOwrZ0YGnOcREEqDFyM8oNl9XrpvL3Mwg&oe=6620A46B');
+    background-size: cover;
+    display: none;
+}
+
+@keyframes rotate-1 {
+    0%, 100% {
+        right: 0;
+        top: 0;
+    }
+    25% {
+        transform: translateX(-10rem);
+    }
+    50% {
+        transform: translateY(10rem) translateX(-10rem);
+    }
+    75% {
+        transform: translateY(10rem);
+    }
+}
+
+@keyframes rotate-2 {
+    0%, 100% {
+        left: 0;
+        bottom: 0;
+    }
+    25% {
+        transform: translateX(10rem);
+    }
+    50% {
+        transform: translateY(-10rem) translateX(10rem);
+    }
+    75% {
+        transform: translateY(-10rem);
+    }
+}
